@@ -5,12 +5,12 @@ import (
 	"log"
 	"net/http"
 
-	"CronJob/router"
+	router "CronJob/router"
 )
 
 func main() {
 	fmt.Println("MongoDB API")
 	r := router.Router()
 	fmt.Println("Server is getting started...")
-	log.Fatal(http.ListenAndServe(":4002", r))
+	log.Fatal(http.ListenAndServe(":4001", r))
 }
